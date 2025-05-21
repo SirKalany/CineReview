@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '../public/vite.svg'
-import './style/App.scss'
+import '../style/App.scss'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -32,4 +32,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
