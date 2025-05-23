@@ -6,20 +6,20 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="max-w-screen-lg mx-auto p-8 text-center font-sans text-gray-900 dark:text-white dark:bg-[#242424] min-h-screen flex flex-col items-center justify-center">
+    <div className="max-w-full mx-auto p-8 text-center font-sans text-gray-900 dark:text-white dark:bg-[#242424] min-h-screen flex flex-col items-center justify-center">
       <div className="flex justify-center gap-8 mb-8">
         <a href="https://vite.dev" target="_blank" rel="noreferrer">
           <img
             src={viteLogo}
             alt="Vite logo"
-            className="h-24 p-6 transition drop-shadow-md hover:drop-shadow-[0_0_2em_#646cffaa]"
+            className="h-24 transition drop-shadow-md hover:drop-shadow-[0_0_2em_#646cffaa]"
           />
         </a>
         <a href="https://react.dev" target="_blank" rel="noreferrer">
           <img
             src={reactLogo}
             alt="React logo"
-            className="h-24 p-6 animate-spin transition hover:drop-shadow-[0_0_2em_#61dafbaa]"
+            className="h-24 animate-spin transition hover:drop-shadow-[0_0_2em_#61dafbaa]"
             style={{ animationDuration: "20s" }}
           />
         </a>
