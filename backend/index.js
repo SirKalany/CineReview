@@ -1,14 +1,31 @@
-const express = require('express');
-const path = require('path');
+const express = require("express");
+const cors = require("cors");
+const fs = require("fs");
+const path = require("path");
 const app = express();
-const port = 3000;
+const PORT = 3001;
 
-app.use(express.static(path.join(__dirname, '../frontend/dist')));
+app.use(cors());
 
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '../frontend/dist/index.html'));
+app.get("/api/articles", (req, res) => {
+  const filePath = path.join(__dirname, "data", "testing.json"); // <--- CORRIGÉ
+
+  fs.readFile(filePath, "utf8", (err, data) => {
+    if (err) {
+      console.error("Erreur de lecture :", err); // LOG DÉTAILLÉ
+      return res.status(500).json({ error: "Erreur de lecture du fichier" });
+    }
+
+    try {
+      const parsed = JSON.parse(data);
+      res.json(parsed);
+    } catch (parseErr) {
+      console.error("Erreur de parsing JSON :", parseErr);
+      res.status(500).json({ error: "Fichier JSON invalide" });
+    }
+  });
 });
 
-app.listen(port, () => {
-  console.log(`Server running at http://localhost:${port}`);
+app.listen(PORT, () => {
+  console.log(`Backend en cours sur http://localhost:${PORT}`);
 });
