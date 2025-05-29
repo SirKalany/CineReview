@@ -1,47 +1,52 @@
-import { useState } from "react";
-import reactLogo from "../assets/react.svg";
-import viteLogo from "../assets/vite.svg";
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
-function App() {
-  const [count, setCount] = useState(0);
+export default function App() {
+  const [articles, setArticles] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    fetch("http://localhost:3001/api/articles")
+      .then((res) => {
+        if (!res.ok) throw new Error("Erreur lors du chargement des articles");
+        return res.json();
+      })
+      .then((data) => {
+        setArticles(data);
+        setLoading(false);
+      })
+      .catch((err) => {
+        setError(err);
+        setLoading(false);
+      });
+  }, []);
 
   return (
-    <div className="max-w-full mx-auto p-8 text-center font-sans text-gray-900 dark:text-white dark:bg-[#242424] min-h-screen flex flex-col items-center justify-center">
-      <div className="flex justify-center gap-8 mb-8">
-        <a href="https://vite.dev" target="_blank" rel="noreferrer">
-          <img
-            src={viteLogo}
-            alt="Vite logo"
-            className="h-24 transition drop-shadow-md hover:drop-shadow-[0_0_2em_#646cffaa]"
-          />
-        </a>
-        <a href="https://react.dev" target="_blank" rel="noreferrer">
-          <img
-            src={reactLogo}
-            alt="React logo"
-            className="h-24 animate-spin transition hover:drop-shadow-[0_0_2em_#61dafbaa]"
-            style={{ animationDuration: "20s" }}
-          />
-        </a>
-      </div>
+    <div className="min-h-screen bg-gray-900 text-gray-200 flex flex-col items-center p-8 font-sans">
+      <h1 className="text-6xl font-extrabold text-red-400 mb-12 drop-shadow-lg">
+        CineReview
+      </h1>
 
-      <h1 className="text-5xl font-bold mb-6">Vite + React</h1>
-
-      <div className="p-8 bg-neutral-100 dark:bg-neutral-900 rounded-lg shadow mb-6">
-        <button
-          onClick={() => setCount((count) => count + 1)}
-          className="rounded border border-transparent px-4 py-2 text-base font-medium bg-neutral-200 dark:bg-[#1a1a1a] hover:border-[#646cff] focus:outline-4"
-        >
-          count is {count}
-        </button>
-        <p className="mt-4">
-          Edit <code className="font-mono">src/App.jsx</code> and save to test HMR
+      {loading && <p className="text-gray-400">Chargement des articles...</p>}
+      {error && (
+        <p className="text-red-500 font-semibold">
+          Erreur : {error.message || error.toString()}
         </p>
-      </div>
+      )}
 
-      <p className="text-gray-500">Click on the Vite and React logos to learn more</p>
+<ul className="w-full max-w-xl space-y-4">
+  {articles.map(({ id, title }) => (
+    <li key={id}>
+      <Link
+        to={`/articles/${id}`}
+        className="block bg-gray-800 rounded-lg p-4 hover:bg-red-700 transition-colors cursor-pointer shadow-md text-xl font-semibold text-red-400 hover:text-red-200"
+      >
+        {title}
+      </Link>
+    </li>
+  ))}
+</ul>
     </div>
   );
 }
-
-export default App;

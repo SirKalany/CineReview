@@ -8,17 +8,42 @@ const PORT = 3001;
 app.use(cors());
 
 app.get("/api/articles", (req, res) => {
-  const filePath = path.join(__dirname, "data", "testing.json"); // <--- CORRIGÉ
+  const filePath = path.join(__dirname, "data", "testing.json");
 
   fs.readFile(filePath, "utf8", (err, data) => {
     if (err) {
-      console.error("Erreur de lecture :", err); // LOG DÉTAILLÉ
+      console.error("Erreur de lecture :", err);
       return res.status(500).json({ error: "Erreur de lecture du fichier" });
     }
 
     try {
       const parsed = JSON.parse(data);
       res.json(parsed);
+    } catch (parseErr) {
+      console.error("Erreur de parsing JSON :", parseErr);
+      res.status(500).json({ error: "Fichier JSON invalide" });
+    }
+  });
+});
+
+app.get("/api/articles/:id", (req, res) => {
+  const filePath = path.join(__dirname, "data", "testing.json");
+
+  fs.readFile(filePath, "utf8", (err, data) => {
+    if (err) {
+      console.error("Erreur de lecture :", err);
+      return res.status(500).json({ error: "Erreur de lecture du fichier" });
+    }
+
+    try {
+      const articles = JSON.parse(data);
+      const article = articles.find((a) => a.id === req.params.id);
+
+      if (!article) {
+        return res.status(404).json({ error: "Article non trouvé" });
+      }
+
+      res.json(article);
     } catch (parseErr) {
       console.error("Erreur de parsing JSON :", parseErr);
       res.status(500).json({ error: "Fichier JSON invalide" });
