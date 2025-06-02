@@ -23,19 +23,25 @@ export default function Article() {
       });
   }, [id]);
 
-  if (loading) 
+  if (loading)
     return <p className="text-gray-400 text-center mt-10">Chargement...</p>;
 
-  if (error) 
-    return <p className="text-red-500 text-center mt-10">{error.message || error.toString()}</p>;
+  if (error)
+    return (
+      <p className="text-red-500 text-center mt-10">
+        {error.message || error.toString()}
+      </p>
+    );
 
   return (
-    <div className="min-h-screen bg-gray-900 text-gray-200 flex flex-col items-center p-8 font-sans">
+    <div className="flex-grow bg-gray-900 text-gray-200 flex flex-col items-center p-8 font-sans">
       <div className="max-w-3xl w-full bg-gray-800 rounded-lg shadow-lg p-8">
         <h1 className="text-5xl font-extrabold mb-6 border-b-4 border-red-600 pb-3 text-red-400 drop-shadow-lg">
           {article.title}
         </h1>
-        <p className="text-lg leading-relaxed text-gray-300">{article.content}</p>
+        <p className="text-lg leading-relaxed text-gray-300">
+          {article.content}
+        </p>
 
         <Link
           to="/"

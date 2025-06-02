@@ -23,9 +23,9 @@ export default function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gray-900 text-gray-200 flex flex-col items-center p-8 font-sans">
+    <div className="flex-grow bg-gray-900 text-gray-200 flex flex-col items-center p-8 font-sans">
       <h1 className="text-6xl font-extrabold text-red-400 mb-12 drop-shadow-lg">
-        CineReview
+        W.I.P
       </h1>
 
       {loading && <p className="text-gray-400">Chargement des articles...</p>}
@@ -35,18 +35,18 @@ export default function App() {
         </p>
       )}
 
-<ul className="w-full max-w-xl space-y-4">
-  {articles.map(({ id, title }) => (
-    <li key={id}>
-      <Link
-        to={`/articles/${id}`}
-        className="block bg-gray-800 rounded-lg p-4 hover:bg-red-700 transition-colors cursor-pointer shadow-md text-xl font-semibold text-red-400 hover:text-red-200"
-      >
-        {title}
-      </Link>
-    </li>
-  ))}
-</ul>
+      <ul className="w-full max-w-xl space-y-4">
+        {articles.map(({ id, title }) => (
+          <li key={id}>
+            <Link
+              to={`/articles/${id}`}
+              className="block bg-gray-800 rounded-lg p-4 hover:bg-red-700 transition-colors cursor-pointer shadow-md text-xl font-semibold text-red-400 hover:text-red-200"
+            >
+              {title}
+            </Link>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }
