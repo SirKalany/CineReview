@@ -7,6 +7,8 @@ const PORT = 3001;
 
 app.use(cors());
 
+app.use('/images', express.static(path.join(__dirname, 'data', 'images')));
+
 app.get("/api/articles", (req, res) => {
   const filePath = path.join(__dirname, "data", "testing.json");
 

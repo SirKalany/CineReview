@@ -36,9 +36,15 @@ export default function Article() {
   return (
     <div className="flex-grow bg-gray-900 text-gray-200 flex flex-col items-center p-8 font-sans">
       <div className="max-w-3xl w-full bg-gray-800 rounded-lg shadow-lg p-8">
-        <h1 className="text-5xl font-extrabold mb-6 border-b-4 border-red-600 pb-3 text-red-400 drop-shadow-lg">
+        <h2 className="text-5xl font-extrabold mb-6 border-b-4 border-red-600 pb-3 text-red-400 drop-shadow-lg">
           {article.title}
-        </h1>
+        </h2>
+        <img
+          src={`http://localhost:3001${article.image}`}
+          alt={article.title}
+          className="w-full h-80 rounded object-cover mb-6 shadow-md"
+        />
+
         <p className="text-lg leading-relaxed text-gray-300">
           {article.content}
         </p>
