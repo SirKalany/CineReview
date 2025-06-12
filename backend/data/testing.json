@@ -2,41 +2,41 @@
   {
     "id": "A1",
     "title": "Dune, deuxième partie",
-    "content": "Paul Atréides (Timothée Chalamet), seul survivant avec sa mère de la Maison Atréides, se joint au peuple autochtone et réprouvé d'Arrakis, les Fremen, tout en fomentant sa revanche contre ceux qui ont assassiné son père et détruit sa famille. Alors qu'il doit faire un choix entre son amour pour la Fremen Chani et l'accomplissement de sa vengeance, il essaiera de tout faire pour reconquérir le pouvoir sans déclencher une abominable guerre sainte que ses visions du futur lui révèlent.",
-    "image": "/images/dune2.webp",
-    "director": "Denis Villeneuve",
+    "content": "Paul Atréides poursuit sa quête pour unifier les Fremen et libérer Arrakis du joug des forces oppressives. Tandis que les tensions montent, il doit affronter ses propres démons intérieurs et les puissances extérieures prêtes à tout pour contrôler l'Épice. Une épopée de pouvoir, de prophétie et de survie dans un univers désertique hostile.",
+    "image": "/images/movies/dune2.webp",
+    "director": ["Denis Villeneuve"],
     "tags": ["Science-fiction", "Action", "Blockbuster", "Film"]
   },
   {
     "id": "A2",
     "title": "Top Gun: Maverick",
-    "content": "Le film suit le capitaine de vaisseau Pete « Maverick » Mitchell, Pilote de chasse de la Marine des USA depuis trente ans, qui est appelé par son ancien ami l'amiral Tom « Iceman » Kazansky, afin de former, pour une mission spéciale, les meilleurs pilotes diplômés récents de l'école Top Gun. Parmi ceux-ci, se trouve le fils de son ami disparu. Pour ce nouveau défi, « Maverick » affronte le conflit entre son devoir d'officier, pilote de chasse, et la promesse faite à la femme de son défunt meilleur ami « Goose. »",
-    "image": "/images/topgunmaverick.webp",
-    "director": "Joseph Kosinski",
+    "content": "Le capitaine Pete 'Maverick' Mitchell revient en tant qu'instructeur à l'école Top Gun, confronté à son passé et chargé de former une nouvelle génération de pilotes d'élite. Entre défis aériens et conflits personnels, Maverick doit repousser ses limites pour protéger ceux qu'il aime et relever une ultime mission périlleuse.",
+    "image": "/images/movies/topgunmaverick.webp",
+    "director": ["Joseph Kosinski"],
     "tags": ["Action", "Aviation", "Nostalgie", "Blockbuster"]
   },
   {
     "id": "A3",
     "title": "Oppenheimer",
-    "content": "Le film présente une narration non linéaire, entrelaçant différentes périodes de la vie de Robert Oppenheimer : ses années de Cambridge à Los Alamos, son audition de sécurité en 1954 et l'audition parlementaire de Strauss en 1959. L'histoire est ici résumée en suivant l'ordre chronologique des événements.",
-    "image": "/images/oppenheimer.webp",
-    "director": "Christopher Nolan",
+    "content": "Ce biopic retrace la vie complexe de J. Robert Oppenheimer, père de la bombe atomique, explorant ses ambitions scientifiques et les conséquences morales de ses découvertes. Entre triomphes personnels et dilemmes éthiques, le film dévoile le poids de l'innovation au cœur de la Seconde Guerre mondiale.",
+    "image": "/images/movies/oppenheimer.webp",
+    "director": ["Christopher Nolan"],
     "tags": ["Biopic", "Historique", "Drame", "Science"]
   },
   {
     "id": "A4",
     "title": "Destination finale : Bloodlines",
-    "content": "Stefani Reyes (Kaitlyn Santa Juana) fait tous les jours le même cauchemar dans lequel elle voit ses grands-parents et de nombreuses personnes mourir dans l'effondrement d'un restaurant panoramique 50 ans auparavant. Elle décide de retrouver sa grand-mère qui vit recluse depuis des années afin de l'interroger. Celle-ci lui apprend que la Mort en a après toute la famille car aucun n'aurait dû exister si elle n'avait pas échappé à l'accident du restaurant.",
-    "image": "/images/destinationfinalebloodlines.webp",
+    "content": "Stefani Reyes est hantée par des visions terrifiantes d’un accident mortel survenu des décennies plus tôt. Alors qu’elle cherche à comprendre le passé de sa famille, la Mort semble prête à réclamer sa revanche. Un thriller surnaturel où chaque choix peut sceller le destin.",
+    "image": "/images/movies/destinationfinalebloodlines.webp",
     "director": ["Zach Lipovsky", "Adam B. Stein"],
     "tags": ["Horreur", "Thriller", "Surnaturel", "Franchise"]
   },
   {
     "id": "A5",
     "title": "Mad Max: Fury Road",
-    "content": "Dans un monde dévasté par la guerre pour l'eau et le pétrole, un seigneur de guerre nommé Immortal Joe règne en maître sur la Citadelle, un petit bastion d'hommes qu'il a asservis à l'aide de « war boys » fanatisés. Ceux-ci capturent Max, qui se retrouve prisonnier en tant que 'globulard' jusqu'à ce que l'Imperator Furiosa, générale de guerre et conductrice de l'attelage de guerre d'Immortal Joe, envoyée chercher du carburant de l'autre côté du désert, ne change de route en emportant les épouses-esclaves du maître de la Citadelle.",
-    "image": "/images/madmaxfuryroad.webp",
-    "director": "George Miller",
+    "content": "Dans un monde post-apocalyptique assoiffé de violence, Max Rockatansky s’allie à Furiosa pour échapper à un tyran impitoyable. Une course-poursuite explosive à travers le désert brûlant, où survie et rébellion s’entremêlent dans une lutte pour la liberté.",
+    "image": "/images/movies/madmaxfuryroad.webp",
+    "director": ["George Miller"],
     "tags": ["Post-apo", "Action", "Course-poursuite", "Blockbuster"]
   }
 ]

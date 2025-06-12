@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Directors() {
   const [articles, setArticles] = useState([]);
@@ -42,11 +43,13 @@ export default function Directors() {
 
       <ul className="w-full max-w-md space-y-2">
         {filtered.map((name, index) => (
-          <li
-            key={index}
-            className="bg-gray-800 hover:bg-red-700 transition-colors px-4 py-2 rounded text-red-300 hover:text-white shadow"
-          >
-            {name}
+          <li key={index}>
+            <Link
+              to={`/realisateurs/${encodeURIComponent(name)}`}
+              className="block bg-gray-800 hover:bg-red-700 transition-colors px-4 py-2 rounded text-red-300 hover:text-white shadow"
+            >
+              {name}
+            </Link>
           </li>
         ))}
         {filtered.length === 0 && (

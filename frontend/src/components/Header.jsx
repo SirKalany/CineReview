@@ -8,7 +8,7 @@ export default function Header() {
           CinéScope
         </h1>
         <nav className="flex gap-8 text-gray-900 font-semibold">
-          <Link to="/films" className="hover:text-gray-200 transition">
+          <Link to="/" className="hover:text-gray-200 transition">
             Films
           </Link>
           <Link to="/series" className="hover:text-gray-200 transition">

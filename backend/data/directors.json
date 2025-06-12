@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Denis Villeneuve",
+    "image": "/images/directors/villeneuve.webp",
+    "bio": "Denis Villeneuve est un réalisateur canadien réputé pour ses œuvres visuellement impressionnantes mêlant science-fiction et drame psychologique."
+  },
+  {
+    "name": "Joseph Kosinski",
+    "image": "/images/directors/kosinski.webp",
+    "bio": "Joseph Kosinski est un réalisateur américain connu pour ses films de science-fiction visuellement spectaculaires, notamment Tron: Legacy et Top Gun: Maverick."
+  },
+  {
+    "name": "Christopher Nolan",
+    "image": "/images/directors/nolan.webp",
+    "bio": "Christopher Nolan est un réalisateur britannique célèbre pour ses films complexes, non linéaires et intellectuellement stimulants comme Inception et Oppenheimer."
+  },
+  {
+    "name": "Zach Lipovsky",
+    "image": "/images/directors/lipovsky.webp",
+    "bio": "Zach Lipovsky et Adam B. Stein sont un duo de réalisateurs qui ont travaillé sur plusieurs projets de science-fiction et thrillers à suspense."
+  },
+   {
+    "name": "Adam B. Stein",
+    "image": "/images/directors/adambstein.webp",
+    "bio": "Zach Lipovsky et Adam B. Stein sont un duo de réalisateurs qui ont travaillé sur plusieurs projets de science-fiction et thrillers à suspense."
+  },
+  {
+    "name": "George Miller",
+    "image": "/images/directors/miller.webp",
+    "bio": "George Miller est un réalisateur australien visionnaire, célèbre pour la franchise Mad Max et sa capacité à créer des univers post-apocalyptiques."
+  }
+]
