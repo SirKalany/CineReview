@@ -11,24 +11,32 @@
     "id": "A2",
     "title": "Top Gun: Maverick",
     "content": "Le film suit le capitaine de vaisseau Pete « Maverick » Mitchell, Pilote de chasse de la Marine des USA depuis trente ans, qui est appelé par son ancien ami l'amiral Tom « Iceman » Kazansky, afin de former, pour une mission spéciale, les meilleurs pilotes diplômés récents de l'école Top Gun. Parmi ceux-ci, se trouve le fils de son ami disparu. Pour ce nouveau défi, « Maverick » affronte le conflit entre son devoir d'officier, pilote de chasse, et la promesse faite à la femme de son défunt meilleur ami « Goose. »",
-    "image": "/images/topgunmaverick.webp"
+    "image": "/images/topgunmaverick.webp",
+    "director": "Joseph Kosinski",
+    "tags": ["Action", "Aviation", "Nostalgie", "Blockbuster"]
   },
   {
     "id": "A3",
     "title": "Oppenheimer",
     "content": "Le film présente une narration non linéaire, entrelaçant différentes périodes de la vie de Robert Oppenheimer : ses années de Cambridge à Los Alamos, son audition de sécurité en 1954 et l'audition parlementaire de Strauss en 1959. L'histoire est ici résumée en suivant l'ordre chronologique des événements.",
-    "image": "/images/oppenheimer.webp"
+    "image": "/images/oppenheimer.webp",
+    "director": "Christopher Nolan",
+    "tags": ["Biopic", "Historique", "Drame", "Science"]
   },
   {
     "id": "A4",
     "title": "Destination finale : Bloodlines",
     "content": "Stefani Reyes (Kaitlyn Santa Juana) fait tous les jours le même cauchemar dans lequel elle voit ses grands-parents et de nombreuses personnes mourir dans l'effondrement d'un restaurant panoramique 50 ans auparavant. Elle décide de retrouver sa grand-mère qui vit recluse depuis des années afin de l'interroger. Celle-ci lui apprend que la Mort en a après toute la famille car aucun n'aurait dû exister si elle n'avait pas échappé à l'accident du restaurant.",
-    "image": "/images/destinationfinalebloodlines.webp"
+    "image": "/images/destinationfinalebloodlines.webp",
+    "director": ["Zach Lipovsky", "Adam B. Stein"],
+    "tags": ["Horreur", "Thriller", "Surnaturel", "Franchise"]
   },
   {
     "id": "A5",
     "title": "Mad Max: Fury Road",
     "content": "Dans un monde dévasté par la guerre pour l'eau et le pétrole, un seigneur de guerre nommé Immortal Joe règne en maître sur la Citadelle, un petit bastion d'hommes qu'il a asservis à l'aide de « war boys » fanatisés. Ceux-ci capturent Max, qui se retrouve prisonnier en tant que 'globulard' jusqu'à ce que l'Imperator Furiosa, générale de guerre et conductrice de l'attelage de guerre d'Immortal Joe, envoyée chercher du carburant de l'autre côté du désert, ne change de route en emportant les épouses-esclaves du maître de la Citadelle.",
-    "image": "/images/madmaxfuryroad.webp"
+    "image": "/images/madmaxfuryroad.webp",
+    "director": "George Miller",
+    "tags": ["Post-apo", "Action", "Course-poursuite", "Blockbuster"]
   }
 ]

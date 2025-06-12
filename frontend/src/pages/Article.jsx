@@ -44,7 +44,13 @@ export default function Article() {
           alt={article.title}
           className="w-full h-80 rounded object-cover mb-6 shadow-md"
         />
-
+        {article.director && Array.isArray(article.director) ? (
+          <h3 className="text-xl font-bold text-red-400">
+            {article.director.join(", ")}
+          </h3>
+        ) : (
+          <h3 className="text-xl font-bold text-red-400">{article.director}</h3>
+        )}
         <p className="text-lg leading-relaxed text-gray-300">
           {article.content}
         </p>

@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import App from "./pages/App.jsx";
 import Article from "./pages/Article";
+import Directors from "./pages/Directors";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -15,6 +16,7 @@ createRoot(document.getElementById("root")).render(
         <Routes>
           <Route path="/" element={<App />} />
           <Route path="/articles/:id" element={<Article />} />
+          <Route path="/realisateurs" element={<Directors />} />
           <Route path="*" element={<Error />} />
         </Routes>
         <Footer />
